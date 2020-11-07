@@ -1,0 +1,2 @@
+# samashti
+samashti foundation

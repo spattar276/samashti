@@ -31,7 +31,7 @@ class Menu extends FullpageContext {
             <li
               key={i.toString()}
               style={{
-                transition: `all ${transitionTiming * 0.5}ms ease-in-out`,
+                transition: `all 3ms ease-out`,
               }}
               onClick={() => gotoSlide(slide)}
               onKeyPress={() => gotoSlide(slide)}

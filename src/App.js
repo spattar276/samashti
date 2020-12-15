@@ -46,7 +46,6 @@ class App extends Component {
                 Technology
                 Equipment
                 Seed
-                ****Testing ****
 
               </div>
             </FullpageSection>
@@ -57,9 +56,7 @@ class App extends Component {
             }}>
               <div>
                 Adopting a village and their farmers
-                ------------------------------------------------
-                Test
-                -----------------------------
+                ------------
                 Assessing the requirements
                 -----------
                 Raising fund through individual contributions, CSR funding, community collaboration, Bank tieups for loans, fund raising through p2p platforms and other business collaborations

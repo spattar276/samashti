@@ -1,6 +1,7 @@
 .idea/
 .vscode/
 node_modules/
+node_modules/*.*
 build
 .DS_Store
 *.tgz
@@ -10,4 +11,4 @@ lerna-debug.log
 npm-debug.log*
 /.changelog
 .npm/
-package.lock
+package-lock.json

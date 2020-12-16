@@ -1,10 +1,11 @@
 import Home from "../pages/home";
 import AboutUs from "../pages/aboutUs";
 import ContactUs from "../pages/contactUs";
-import HowItWorks from "../pages/howItWorks";
-import OurProjects from "../pages/ourProjects";
+import OurWork from "../pages/ourWork";
+import Faq from "../pages/faq";
+import Collaborators from "../pages/collaborators";
 
-const MENU = ["Home", "How it works", "Our Mission", "About us", " Contact us"];
+const MENU = ["Home", "Our Work", "About Us", "FAQ", "Collaborators", "Contact us"];
 
 const PAGES = [
   {
@@ -18,7 +19,7 @@ const PAGES = [
     }
   },
   {
-    component: HowItWorks,
+    component: OurWork,
     styles:{
       height: "100vh",
       backgroundColor: "#0E5518",
@@ -28,7 +29,7 @@ const PAGES = [
     }
   },
   {
-    component: OurProjects,
+    component: AboutUs,
     styles:{
       height: "100vh",
       backgroundColor: "#90B232",
@@ -38,7 +39,17 @@ const PAGES = [
     }
   },
   {
-    component: AboutUs,
+    component: Faq,
+    styles:{
+      height: "100vh",
+      backgroundColor: "#D4DF3C",
+      color: "#FFFFFF",
+      overflowY: "auto",
+      paddingTop: "100px",
+    }
+  },
+  {
+    component: Collaborators,
     styles:{
       height: "100vh",
       backgroundColor: "#D4DF3C",

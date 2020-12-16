@@ -1,49 +1,42 @@
-import React from 'react';
-import FullpageContext from  '@ap.cx/react-fullpage';
-
-class Menu extends FullpageContext {
-
-  constructor(props) {
-    super(props);
-  }
-
+import React, { Component } from 'react';
+import FullpageContext from '@ap.cx/react-fullpage';
+import mainLogo from '../images/samastilogo.png';
+import {
+  Link
+} from "react-router-dom";
+export default class Menu extends Component {
   render() {
-    const {
-      menuItems = []
-    } = this.props;
-
-    const {
-      number, slides, transitionTiming,
-    } = this.context;
-
-    const gotoSlide = (slide) => {
-      const { goto } = this.context;
-      goto(slide);
-    };
-
-    if(!slides.length)
-      return null;
-
     return (
-      <ul>
-        {
-          slides.map((slide, i) => (
-            <li
-              key={i.toString()}
-              style={{
-                transition: `all 3ms ease-out`,
-              }}
-              onClick={() => gotoSlide(slide)}
-              onKeyPress={() => gotoSlide(slide)}
-              aria-label={`Slide ${i}`}
-              className={number === i ? "active" : ""} >
-              { menuItems[i] }
-            </li>
-          ))
-        }
-      </ul>
+      <nav>
+        <div className="header">
+          <div className="logo">
+            <img className="logo-img" src={mainLogo} alt="samasti" />
+          </div>
+          <div className="navigation">
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/ourwork">Our Work</Link>
+              </li>
+              <li>
+                <Link to="/aboutus">About Us</Link>
+              </li>
+              <li>
+                <Link to="/faq">FAQ</Link>
+              </li>
+              <li>
+                <Link to="/collaborators">Collaborators</Link>
+              </li>
+              <li>
+                <Link to="/contactus">Contact Us</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     );
   }
 }
 
-export default Menu;

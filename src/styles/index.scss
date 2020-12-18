@@ -1,38 +1,97 @@
 // @import 'themes.scss';
+//@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-.header {
+//Common
+body{
+  //font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  background-image: linear-gradient( 315deg, #39603D 10%, #9BC40F 100%);
+  color: #ffffff;
+  height: 100vh;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.container-section {
+  padding: 3% 15%;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+/*
+* Starts: Header */
+nav{
   display: flex;
-  justify-content: space-between;
-  padding: 20px 30px;
-  z-index: 100;
-  position: fixed;
-  top: 0px;
-  background: transparent;
-  left: 0px;
-  right: 0px;
-  .logo {
-    .logo-img {
-      width: 120px;
-    }
-  }
-  .navigation {
-    width: 60%;
-    ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-around;
-      li {
-        font-size: 16px;
+  width: 100%;
+  /* position: fixed; */
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    z-index: 100;
+    top: 0px;
+    background: transparent;
+    left: 0px;
+    right: 0px;
+    .logo {
+      .logo-img {
+        width: 120px;
       }
     }
-    .active {
-      font-weight: 500;
-      color: #ffffff;
-      border-bottom: 2px solid;
-      transition: all 0.3s ease-out;
+    .navigation {
+      width: 60%;
+      ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        li a{
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 500;
+          color:#ffffff;
+          padding: 10px 20px;
+          &:hover{
+            font-weight: 800;
+            color:#ffffff;
+            background-color: #F1B24A;
+          }
+        }
+      
+
+      }
+      .active {
+        font-weight: 500;
+        color: #ffffff;
+        border-bottom: 2px solid;
+        transition: all 0.3s ease-out;
+      }
     }
   }
 }
+
+/*
+* Starts: Contactus */
+.address {
+  padding: 5%;
+  background-color: #ffffff;
+  color: #164A41;
+  h4{
+    color: #DE354C;
+    font-size: 34px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+  p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
+
 
 .home {
   width: 70%;
@@ -138,22 +197,9 @@
   }
 }
 
-.container-section {
-  padding: 15px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  padding-bottom: 100px;
-}
 
-.address {
-  padding: 0 20%;
-  h4,
-  p {
-    margin-top: 0px;
-    margin-bottom: 10px;
-  }
-}
+
+
 
 @media only screen and (max-width: 600px) {
   .navigation{

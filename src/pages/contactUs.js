@@ -7,7 +7,7 @@ export default class OurWork extends Component {
           <div className="address">
             <h4>SAMASHTI FOUNDATION</h4>
             <hr/>
-            <p>Registered Office: 22, Embassy Tranqui, Alit#403, 8th Main 3rd Block, Koramangala, Bangalore</p>
+            <p>Registered Office: 22, Embassy Tranquil, Alit#403, 8th Main 3rd Block, Koramangala, Bangalore</p>
             <p>Email : <strong> samashtifoundation@yahoo.com ,  Samashti.india@gmail.com </strong></p>
             <p>Telephone :  <strong>9663973295, 9663879295 </strong></p>
             <hr/>

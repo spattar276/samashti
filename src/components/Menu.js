@@ -15,9 +15,6 @@ export default class Menu extends Component {
           <div className="navigation">
             <ul>
               <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
                 <Link to="/ourwork">Our Work</Link>
               </li>
               <li>

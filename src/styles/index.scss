@@ -19,7 +19,12 @@ body{
   background: linear-gradient(135deg, rgba(54,177,74,0.9122023809523809) 34%, rgba(74,156,176,1) 98%);
   color: #ffffff;
   height: 100vh;
-
+  margin:0;
+  padding:0;
+}
+h1,h2,h3,h4 {
+  margin:0;
+  padding:0;
 }
 .container{
   width: 80%;
@@ -33,24 +38,22 @@ body{
 }
 .flex-container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 /*
 * Starts: Header */
 nav{
   display: flex;
   width: 100%;
+  border-bottom: 1px solid #ffffff;
+  background: linear-gradient(135deg, rgba(54,177,74,0.9122023809523809) 34%, rgba(74,156,176,1) 98%);
   /* position: fixed; */
   .header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 10px 20px;
     z-index: 100;
-    top: 0px;
-    background: transparent;
-    left: 0px;
-    right: 0px;
     .logo {
       .logo-img {
         width: 120px;
@@ -106,55 +109,90 @@ nav{
 * Home Page
 */
 .home {
-  width: 100%;
+  
   .container-11{
-    width: 90%;
-    display:flex;
-    height: 55vh;
-    margin-bottom: 10px;
-    margin: 0 auto;
-    div{
-      width: 100%;
-      img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    width: 100%;
+    height: 80vh;
+    background: url('../images/home-13.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    border-bottom: 1px solid #ffffff;
+    .right-section{
+      width: 20%;
+      margin:0 auto;
+      position: absolute;
+      right:0;
+      top: 7%;
+        h3{
+          text-align: center;
+          font-size: 1.12rem;
+          padding-bottom: 10px;
+        }
+        .flex-container p{
+          background: linear-gradient(135deg, rgba(54,177,74,0.9122023809523809) 34%, rgba(74,156,176,1) 98%);
+          color: #ffffff;
+          //font-size: 1.12rem;
+          margin: 5px 0px;
+          padding: 8px 10px;
+          text-align: center;
+          font-weight: 600;
+          border-radius: 10px 0 0px 10px;
+          height: 80px;
+          display: flex;
+          font-size: 1.012rem;
+          img{
+            width: 10vh;
+            height: 10vh;
+            background-color: #fff;
+            border-radius: 10vh;
+          }
+          h4{
+            padding: 10px 0px;
+            display: block;
+            margin-left: 15px;
+            text-align: left;
+          }
+        }
       }
-    }
-
   }
   .container-12{
-    width: 90%;
-    margin:0 auto;
-    h2{
-      text-align: center;
+    display: flex;
+    color: #ffffff;
+    flex-direction: row;
+    justify-content: space-evenly;
+    p{
+      border-right: 1px solid #ffffff;
+      padding: 0 20px;
     }
-    .flex-container p{
-      background-color: #ffffff;
-      color: #164A41;
-      font-size: 1.2rem;
-      margin: 5px 10px;
-      padding: 8px 10px;
-      flex-basis: 33%;
-      text-align: center;
-      font-weight: 500;
-      border-radius: 10px;
-
-    }
-  }
-  .headline-big {
-    font-size: 5.385em;
-    font-weight: 700;
-    color: #f2c71a;
-    margin: 0px;
-  }
-  .intro {
-    font-size: 1.692em;
-    font-weight: 200;
-    color: "#FFFFFF";
   }
 }
 
+
+/*
+* Our Work
+*/
+
+.our-work{
+  h2{
+    margin: 20px 0;
+    text-align: center;
+  }
+  .workflow-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    div{
+      border-radius: 40px;
+      padding: 10px;
+      /* color: #164A41; */
+      border: 2px solid;
+      height: 40px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+}
 .how-it-work {
   padding: 50px 0px;
   .container-section {

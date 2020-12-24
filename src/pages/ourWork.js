@@ -1,11 +1,11 @@
 import React, {Component} from "react";
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-
-const content = [
+import HorizontalTimeline from 'react-horizontal-timeline';
+//import 'react-vertical-timeline-component/style.min.css';
+// "Raise funds through individuals, CSR, community collaboration, Bank tieups for loans, p2p platforms and other business collaborations",
+const values = [
   "Adopting a village and their farmers",
   "Assessing the requirements",
-  "Raising fund through individual contributions, CSR funding, community collaboration, Bank tieups for loans, fund raising through p2p platforms and other business collaborations",
+  "Raise funds from various contributors",
   "Utilizing the funds at the village level over a period of time",
   "Simultaneously enable technology to improve ease of farming",
   "Implement various means to measure improvement and productivity of Organic Farming",
@@ -14,22 +14,27 @@ const content = [
 ]
 
 export default class OurWork extends Component {
+  
   render() {
     return (
-      <div className="container how-it-work">
-        <h2 className="section-heading">How it Works</h2>
-        <div className="container-section ">
-          {/* <ol> */}
+      <div className="container our-work">
+        <h2>How we work</h2>
+        <div className="workflow-container ">  
           {
-            content.map(item => {
+            values.map((item,index) => {
               return (
-                <p>{item}</p>
+                <div><span>{++index}</span>{item}</div>
               )
             })
           }
-          {/* </ol> */}
+      
         </div>
-        <div className="container our-project">
+        
+        
+      
+
+
+        {/* <div className="container our-project">
           <h2 className="section-heading">Our Mission</h2>
           <div className="container-section">
             <p>What is the Mission of Samashti?</p>
@@ -45,7 +50,7 @@ export default class OurWork extends Component {
             </ul>
             <p>In a nutshell, the village and farmers will be adopted and will be assisted through funding for sustainable organic farming and to improve farmers livelihood.</p>
           </div>
-        </div>
+        </div> */}
      </div>
     );
   }

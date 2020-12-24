@@ -1,28 +1,29 @@
 import React, {Component} from "react";
-import Home1 from '../images/home-1.jpeg';
+import  OF from '../images/icons/crops.svg';
+import  FI from '../images/icons/farming.svg';
+import  TI from '../images/icons/drone-farming.svg';
+import  IIF from '../images/icons/farmer.svg';
 
 export default class Home extends Component{
   render() {
     return(
       <div className="home">
-       <section className="container-11"> 
-        <div>
-          <img src={Home1} alt="carosuel-1" />
-        </div>
-       </section>
-       <section className="container-12"> 
-        <h2>We work for Farmers </h2>
-          <div className="flex-container">
-            <p>Transition to Sustainable Organic Farming</p>
-            <p>Provide farmer level infrastructure </p>
-            <p>Enable ecosystem of Farming through technology, innovation and creating farmpreneurs</p>
-          </div>
-
-       {/*  <div>
-          We are a not-for-profit social cause organization started to enable farmers transition to Sustainable Organic Farming. 
-          We aim to achieve this goal by raising funds on a village to village basis to create village level and farmer level infrastructure required for Organic Farming, in collaboration with grassroot level organizations that are working directly with farmers.
-          Furthermore, we plan to enable an ecosystem of farm inputs, implement technology, support innovation and incubate farmpreneurs on sustainable organic farming practices. 
-        </div> */}
+        <section className="container-11"> 
+          <div className="right-section">
+            <h3>We work for farmers to </h3>
+              <div className="flex-container">
+                <p> <img src={OF} alt="saveTree"></img> <h4>Enable sustainable organic farming </h4>  </p>
+                <p> <img src={FI} alt="saveTree"></img> <h4>Provide farm inputs </h4> </p>
+                <p> <img src={TI} alt="saveTree"></img> <h4>Technology intervention</h4></p>
+                <p> <img src={IIF} alt="saveTree"></img> <h4>Innovations and  incubating farmpreneurs</h4></p>
+              </div>
+          </div>  
+        </section>
+        <section className="container-12">
+          <p> Compost providers </p>
+          <p> Innovative Flora </p>
+          <p> Shoba Tulip </p>
+          <p> KV Lake Front </p>
        </section>
       </div>
     )

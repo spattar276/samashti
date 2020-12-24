@@ -14,17 +14,17 @@ export default class Menu extends Component {
           </div>
           <div className="navigation">
             <ul>
+            <li>
+                <Link to="/aboutus">About Us</Link>
+              </li>
               <li>
                 <Link to="/ourwork">Our Work</Link>
               </li>
               <li>
-                <Link to="/aboutus">About Us</Link>
+                <Link to="/collaborators">Collaborators</Link>
               </li>
               <li>
                 <Link to="/faq">FAQ</Link>
-              </li>
-              <li>
-                <Link to="/collaborators">Collaborators</Link>
               </li>
               <li>
                 <Link to="/contactus">Contact Us</Link>

@@ -11,7 +11,7 @@ export default class Home extends Component{
         <section className="container-11"> 
           <div className="right-section">
             <h3>We work for farmers to </h3>
-              <div className="flex-container">
+              <div className="flex-container column">
                 <p> <img src={OF} alt="saveTree"></img> <h4>Enable sustainable organic farming </h4>  </p>
                 <p> <img src={FI} alt="saveTree"></img> <h4>Provide farm inputs </h4> </p>
                 <p> <img src={TI} alt="saveTree"></img> <h4>Technology intervention</h4></p>

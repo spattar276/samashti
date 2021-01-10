@@ -38,13 +38,39 @@ h1,h2,h3,h4 {
 }
 .flex-container{
   display: flex;
+  
+}
+.column{
   flex-direction: column;
+}
+.row{
+  flex-direction: row;
 }
 .wrapper{
   width: 100%;
   background-color: #ffffff;
   color: #000000;
 }
+.title-container{
+  color: #fc0707;
+  text-align: center;
+  height: 50px;
+  //background: linear-gradient(135deg, rgba(54, 177, 74, 0.912202) 34%, #4a9cb0 98%);
+  background: url('../images/more-leaves.png');
+  opacity: 0.65;
+  position:relative;
+  h2{
+    font-size: 28px;
+    padding-top: 5px;
+    position: absolute;
+    left: 40%;
+    padding: 8px 30px;
+    background-color: #ffffff;
+    //transform: translate(50%, -50%);
+  }
+
+}
+
 /*
 * Starts: Header */
 nav{
@@ -178,19 +204,27 @@ nav{
 */
 
 .our-work{
-  display: flex;
-  flex-direction: row;
-  padding: 40px 0;
-  justify-content: space-between;
-  margin-bottom: 10%;
-  h2{
-    //padding: 20px 0;
-    margin-top: 10%;
-    text-align: center;
-    color: #fc0707;
-    width: 30%;
-    font-size: 32px;
+  
+  padding: 20px 0;
+  
+  //margin-bottom: 10px;
+  .pattern-container{
+    width: 35%;
+    position: relative;
+   // background-image: url('../images/pattern1.jpg');
+  
+    h2{
+      //padding: 20px 0;
+      //text-align: center;
+      color: #fc0707;
+      //width: 30%;
+      font-size: 28px;
+      position: absolute;
+      top: 50%;
+      transform: translate(50%, -50%);
+    }
   }
+
   .workflow-container{
     display: grid;
     //grid-template-columns: 50% 50%;
@@ -219,9 +253,15 @@ nav{
     }
   }
   .projects-container{
-    h3{
+    padding: 0 10px;
+    color: #164A41;
+    margin-bottom: 5px;
+    line-height: 24px;
+    font-size: 18px;
+    h2, h3{ 
+      margin: 5px 0;
+      color: #fc0707;
       text-align: center;
-      margin: 10px 0;
     }
     div{
       display:flex;

@@ -10,7 +10,9 @@ export default class Menu extends Component {
       <nav>
         <div className="header">
           <div className="logo">
-            <img className="logo-img" src={mainLogo} alt="samasti" />
+            <a href="/">
+              <img className="logo-img" src={mainLogo} alt="samasti" />
+            </a>  
           </div>
           <div className="navigation">
             <ul>

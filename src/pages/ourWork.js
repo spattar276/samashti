@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import HorizontalTimeline from 'react-horizontal-timeline';
 import Video1 from '../images/video-1.mp4'
 import flowchart from '../images/howwework.png'
+import pattern from '../images/swirl_pattern.png'
 //import 'react-vertical-timeline-component/style.min.css';
 // "Raise funds through individuals, CSR, community collaboration, Bank tieups for loans, p2p platforms and other business collaborations",
 const values = [
@@ -21,10 +22,15 @@ export default class OurWork extends Component {
     return (
       <div className="wrapper">
         <div className="container ">
+          
           <section className="our-work">
-            <h2>How we work</h2>
-            <div style={{width: '65%', height: '450px'} }>
-              <img style={{width: '100%', height: '100%', objectFit:"contain"} }src={flowchart} alt="how we work" />
+            {/* <div className="pattern-container" style={{width: '35%', height: '450px'} }>
+              <img style={{width: '100%', height: '100%', objectFit:"cover", opacity: '0.65'}} src={pattern} alt="how we work"  />
+              <h2>How we work</h2>
+            </div> */}
+            <div className="title-container"><h2>How we work</h2> </div>
+            <div style={{width: '800px', height: '400px', margin: '0 auto'} }>
+              <img style={{width: '100%', height: '100%', objectFit:"cover"}} src={flowchart} alt="how we work" />
             </div>
           </section>
         {/*   <div className="workflow-container ">  
@@ -36,19 +42,19 @@ export default class OurWork extends Component {
               })
             }
           </div> */}
-          <section>
-            <h2>Our Projects</h2>
-            <div className="projects-container">
-              <h3>Village : Nijjiyappanadoddi, Ramanagaram |  Grassroot Organization : BERU </h3>
-              <div>
-                <video width="320" height="240" controls>
-                  <source src={Video1} type="video/mp4" />
-                </video>
-                <p>Sustainable Organic Farming Transition projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-          
-            
-            </div>
+          <section className="our-work">  
+            <div className="title-container"><h2>Our Projects</h2> </div> 
+              <div className="flex-container row">     
+                <div  style={{width: '49%', height: '352px', paddingTop: '20px'} }>  
+                  <video width="100%" height="100%" controls>
+                    <source src={Video1} type="video/mp4" />
+                  </video>                
+                </div>
+                <div className="projects-container" style={{width: '51%', height: '352px', paddingTop: '20px'} }> 
+                  <h3>At Nijjiyappanadoddi, Ramanagaram </h3>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div> 
+            </div>   
           </section>
         
         

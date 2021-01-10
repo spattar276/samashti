@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.06f33738.chunk.css",
-    "main.js": "/static/js/main.3abd44d6.chunk.js",
-    "main.js.map": "/static/js/main.3abd44d6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.eccadf89.js",
-    "runtime-main.js.map": "/static/js/runtime-main.eccadf89.js.map",
-    "static/css/2.2aa38b9c.chunk.css": "/static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.ba5cd807.chunk.js": "/static/js/2.ba5cd807.chunk.js",
-    "static/js/2.ba5cd807.chunk.js.map": "/static/js/2.ba5cd807.chunk.js.map",
-    "static/js/3.f55e9a8a.chunk.js": "/static/js/3.f55e9a8a.chunk.js",
-    "static/js/3.f55e9a8a.chunk.js.map": "/static/js/3.f55e9a8a.chunk.js.map",
+    "main.css": "/static/css/main.53b296a4.chunk.css",
+    "main.js": "/static/js/main.35bfe6d3.chunk.js",
+    "main.js.map": "/static/js/main.35bfe6d3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e181b8fe.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e181b8fe.js.map",
+    "static/js/2.957ce02f.chunk.js": "/static/js/2.957ce02f.chunk.js",
+    "static/js/2.957ce02f.chunk.js.map": "/static/js/2.957ce02f.chunk.js.map",
+    "static/js/3.6a830e3a.chunk.js": "/static/js/3.6a830e3a.chunk.js",
+    "static/js/3.6a830e3a.chunk.js.map": "/static/js/3.6a830e3a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.2aa38b9c.chunk.css.map": "/static/css/2.2aa38b9c.chunk.css.map",
-    "static/css/main.06f33738.chunk.css.map": "/static/css/main.06f33738.chunk.css.map",
-    "static/js/2.ba5cd807.chunk.js.LICENSE.txt": "/static/js/2.ba5cd807.chunk.js.LICENSE.txt",
-    "static/media/samastilogo.81ab34a0.png": "/static/media/samastilogo.81ab34a0.png"
+    "static/css/main.53b296a4.chunk.css.map": "/static/css/main.53b296a4.chunk.css.map",
+    "static/js/2.957ce02f.chunk.js.LICENSE.txt": "/static/js/2.957ce02f.chunk.js.LICENSE.txt",
+    "static/media/crops.ed7f5321.svg": "/static/media/crops.ed7f5321.svg",
+    "static/media/drone-farming.747b2b63.svg": "/static/media/drone-farming.747b2b63.svg",
+    "static/media/farmer.f9fd497e.svg": "/static/media/farmer.f9fd497e.svg",
+    "static/media/farming.213ae3b2.svg": "/static/media/farming.213ae3b2.svg",
+    "static/media/index.scss": "/static/media/more-leaves.bd689025.png",
+    "static/media/howwework.f314fe64.png": "/static/media/howwework.f314fe64.png",
+    "static/media/samastilogo.81ab34a0.png": "/static/media/samastilogo.81ab34a0.png",
+    "static/media/video-1.11fcb932.mp4": "/static/media/video-1.11fcb932.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.eccadf89.js",
-    "static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.ba5cd807.chunk.js",
-    "static/css/main.06f33738.chunk.css",
-    "static/js/main.3abd44d6.chunk.js"
+    "static/js/runtime-main.e181b8fe.js",
+    "static/js/2.957ce02f.chunk.js",
+    "static/css/main.53b296a4.chunk.css",
+    "static/js/main.35bfe6d3.chunk.js"
   ]
 }

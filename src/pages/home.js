@@ -12,13 +12,15 @@ export default class Home extends Component{
       <div className="home">
         <section className="container-11"> 
           <div><img src={home1} alt="home1" /></div>
+          <h3>WE WORK FOR FARMERS </h3>
           <div className="right-section">
-            <h3>We work for farmers to </h3>
+           
             <div className="flex-container column">
-              <p> <img src={OF} alt="saveTree"></img> <h4>Enable sustainable organic farming </h4>  </p>
-              <p> <img src={FI} alt="saveTree"></img> <h4>Provide farm inputs </h4> </p>
-              <p> <img src={TI} alt="saveTree"></img> <h4>Technology intervention</h4></p>
-              <p> <img src={IIF} alt="saveTree"></img> <h4>Innovations and  incubating farmpreneurs</h4></p>
+              <p> <img src={OF} alt="saveTree"></img> <h4>Enable Sustainable Organic Farming </h4>  </p>
+              <p> <img src={FI} alt="saveTree"></img> <h4>Connecting Farm Inputs </h4> </p>
+              <p> <img src={TI} alt="saveTree"></img> <h4>Technological Intervention</h4></p>
+              <p> <img src={IIF} alt="saveTree"></img> <h4>Encourage Innovation </h4></p>
+              <p> <img src={IIF} alt="saveTree"></img> <h4>Incubate Farmpreneurs</h4></p>
             </div>
           </div>  
         </section>
@@ -27,8 +29,9 @@ export default class Home extends Component{
         </section>
         <section className="container-8 container-13">
           <div className="c-13-c1">
-            <h2>SAMASHTI FOUNDATION</h2>
-            <p>We are not-for profit social cause organization working towards enabling farmers transition to sustainable organic farming </p>
+            {/* <h2>SAMASHTI FOUNDATION</h2> */}
+            <p>Samashti Foundation is a not-for profit organization started to address the issues that are stoping the farmers from transitioning to organic farming.</p>
+             <p> We seek to sustain farmers, resources and communities by promoting farming practices and methods that are profitable, environmentally sound and good for communities. </p>
             <a href="/aboutus" className="a-button">KNOW MORE</a>
           </div>
           <div className="c-13-c2">
@@ -38,25 +41,25 @@ export default class Home extends Component{
         <section className=" container-14">
           <h2>Our Collaborators</h2>
           <div className="container-8">
-            <div className="flex-2">
+          <div className="flex-2">
               <div>
-                <h3>Grassroot level</h3>
+                <h3>Grassroot Level Partner</h3>
                 <p><img src={flat} alt='apt1' /><span>BERU</span></p>
               </div>
               <div>
-                <h3>Learning Partners</h3>
-                <p><img src={flat} alt='apt1' /><span>DSCE</span></p>
+                <h3>Learning Partner</h3>
+                <p><img src={flat} alt='apt1' /><span>Dayananda Sagar College of Engineering</span></p>
+              </div> 
+            </div>
+           <div >
+              <h3>Urban Compost Connects</h3>
+              <div className="flex-3">
+                <p><img src={flat} alt='apt1' /><span>KVLF Apartment, Yelchenahalli</span></p>
+                <p><img src={flat} alt='apt1' /><span>Innovative Flora, Coxtown</span></p>
+                <p><img src={flat} alt='apt1' /><span>Sobha Tulip, JP Nagar </span></p>
               </div>
             </div>
-            <div >
-            <h3>Urban Connectors</h3>
-            <div className="flex-3">
-              <p><img src={flat} alt='apt1' /><span>KVLF Apartment</span></p>
-              <p><img src={flat} alt='apt1' /><span>Shobha Carnations</span></p>
-              <p><img src={flat} alt='apt1' /><span>Shobha Carnations</span></p>
-              <p><img src={flat} alt='apt1' /><span>Shobha Carnations</span></p>
-            </div>
-          </div>
+            
           </div>
         </section>
       </div>

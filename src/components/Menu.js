@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import FullpageContext from '@ap.cx/react-fullpage';
 import mainLogo from '../images/samastilogo.png';
 import {
   Link

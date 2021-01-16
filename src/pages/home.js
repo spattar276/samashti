@@ -2,10 +2,11 @@ import React, {Component} from "react";
 import  OF from '../images/icons/crops.svg';
 import  FI from '../images/icons/farming.svg';
 import  TI from '../images/icons/drone-farming.svg';
+import  GI from '../images/icons/green-innovation.svg';
 import  IIF from '../images/icons/farmer.svg';
 import home1 from '../images/home-13.jpeg';
-import home2 from '../images/home-2.jpg';
-import flat from '../images/flat.png';
+import home2 from '../images/home-12.jpeg';
+import flat from '../images/icons/apartments1.svg';
 export default class Home extends Component{
   render() {
     return(
@@ -19,7 +20,7 @@ export default class Home extends Component{
               <p> <img src={OF} alt="saveTree"></img> <h4>Enable Sustainable Organic Farming </h4>  </p>
               <p> <img src={FI} alt="saveTree"></img> <h4>Connecting Farm Inputs </h4> </p>
               <p> <img src={TI} alt="saveTree"></img> <h4>Technological Intervention</h4></p>
-              <p> <img src={IIF} alt="saveTree"></img> <h4>Encourage Innovation </h4></p>
+              <p> <img src={GI} alt="saveTree"></img> <h4>Encourage Innovation </h4></p>
               <p> <img src={IIF} alt="saveTree"></img> <h4>Incubate Farmpreneurs</h4></p>
             </div>
           </div>  
@@ -44,22 +45,51 @@ export default class Home extends Component{
           <div className="flex-2">
               <div>
                 <h3>Grassroot Level Partner</h3>
-                <p><img src={flat} alt='apt1' /><span>BERU</span></p>
+                <p>
+                  <div className="icon-flat-container"><img src={flat} alt='apt1' /></div>
+                  <div className="icon-flat-title"><p>BERU</p></div>
+                </p>
               </div>
               <div>
                 <h3>Learning Partner</h3>
-                <p><img src={flat} alt='apt1' /><span>Dayananda Sagar College of Engineering</span></p>
+                <p>
+                  <div className="icon-flat-container"><img src={flat} alt='apt2' /></div>
+                  <div className="icon-flat-title"><p>Dayananda Sagar College of Engineering</p></div>
+                </p>
               </div> 
             </div>
            <div >
               <h3>Urban Compost Connects</h3>
               <div className="flex-3">
-                <p><img src={flat} alt='apt1' /><span>KVLF Apartment, Yelchenahalli</span></p>
-                <p><img src={flat} alt='apt1' /><span>Innovative Flora, Coxtown</span></p>
-                <p><img src={flat} alt='apt1' /><span>Sobha Tulip, JP Nagar </span></p>
+                <p>
+                  <div className="icon-flat-container"><img src={flat} alt='apt3' /></div>
+                  <div className="icon-flat-title"><p>KVLF Apartment,</p><p>Yelchenahalli</p></div>
+                </p>
+                <p>
+                  <div className="icon-flat-container"><img src={flat} alt='apt4' /></div>
+                  <div className="icon-flat-title"><p>Innovative Flora,</p><p>Coxtown</p></div>
+                </p>
+                <p>
+                  <div className="icon-flat-container"><img src={flat} alt='apt5' /></div>
+                  <div className="icon-flat-title"><p>Sobha Tulip,</p><p>JP Nagar</p> </div>
+                </p>
               </div>
             </div>
             
+          </div>
+        </section>
+        <section className="container-15">
+          <h2>Choose Samashti Fountation</h2>
+          <div className="continer choose-cont">
+            <div>
+              <p>Become a Volunteer</p>
+              <p>Compost Contributor</p>
+              <p>Technology partner</p>
+              <p>Fund raiser</p>
+            </div>
+            <div>
+             <p><a href="/" className="">Donate</a> </p>
+            </div>
           </div>
         </section>
       </div>

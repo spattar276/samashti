@@ -6,7 +6,8 @@ import "./styles/index.scss";
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 import Menu from './components/Menu';
 import Home from './pages/home';
@@ -28,6 +29,34 @@ export default function App() {
           <Route path="/" component={Home}>
           </Route>
         </Switch>
+        {/* <footer>
+        <nav>    
+          <div className="header">         
+            <div className="navigation">
+              <ul>
+              <li>
+                  <Link to="/">Home</Link>
+                </li>
+              <li>
+                  <Link to="/aboutus">About Us</Link>
+                </li>
+                <li>
+                  <Link to="/ourwork">Our Work</Link>
+                </li>
+                <li>
+                  <Link to="/collaborators">Collaborators</Link>
+                </li>
+                <li>
+                  <Link to="/faq">FAQ</Link>
+                </li>
+                <li>
+                  <Link to="/contactus">Contact Us</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </footer> */}
     </Router>
   );
 }

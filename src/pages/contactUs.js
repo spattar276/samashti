@@ -2,7 +2,7 @@ import React, {Component} from "react";
 export default class OurWork extends Component {
   render() {
     return (
-      <div className="container contact-us">
+      <div className=" contact-us">
         <div className="container-section">
           <div className="address">
             <h4>SAMASHTI FOUNDATION</h4>

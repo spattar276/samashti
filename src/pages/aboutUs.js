@@ -5,6 +5,7 @@ import OF from '../images/icons/crops.svg';
 import FI from '../images/icons/farming.svg';
 import TI from '../images/icons/drone-farming.svg';
 import IIF from '../images/icons/farmer.svg';
+import GI from '../images/icons/green-innovation.svg';
 
 export default class AboutUs extends Component {
   render() {
@@ -24,46 +25,71 @@ export default class AboutUs extends Component {
                 <p>The lack of Organic Farming knowledge, and assistance are all missing for many farmers and we at Samashti wants to address this problem and would want to collectively work with several players in the market to facilitate bringing the required help for easy transition to sustainable organic farming practises.</p>
                 <p>We want to be the change makers and our vision is to transform as many farmers as we can into a sustainable organic farmers in the near future.</p>
               </div>
-              <div style={{ width: '45%', padding: '10px 0px' }}>
+              <div style={{ width: '45%', padding: '0px 20px' }}>
                 <img src={aboutus2} alt="samashti-aboutus" />
               </div>
             </div>
           </section>
-          <section className="abt-2">
+          <section className=" abt-2">
             <div className="title-container">
               <h2>Our Mission</h2>
               <h3>Our mission is to help farmers transition easily for which the funds will be raised and will be utilised for below activites</h3>
             </div>
-            <ul className="flex-container row ">
+            <ul className="container full-banner">
               <li>
-                <p> <img src={OF} alt="saveTree"></img> <h4>Enable Sustainable Organic Farming </h4>  </p>
+                <div className="image-container"> 
+                  <p> <img src={OF} alt="saveTree"></img></p>
+                  <h3>Enable Sustainable Organic Farming </h3>
+                </div>  
+                <div className="description-container">
                   <p >Creating self-sufficient villages with the required infrastructure to conduct sustainable organic farming.</p>
-                </li>
-              <li>
-                <p> <img src={FI} alt="saveTree"></img> <h4>Connecting Farm Inputs </h4> </p> 
-                <p>Urban compost to Rural </p>
-                <p>Seed Producers</p>
-                <p>Equipment Rentals and Manufacturers</p>
-                <p>Agri Input Companies</p>
-                <p>Government Subsidies</p>
-                <p>Financial Lending Institutions</p>
-                <p>Crop Insurance</p>
-                <p>Training</p>
+                </div>
               </li>
               <li>
-                <p> <img src={TI} alt="saveTree"></img> <h4>Technological Intervention</h4></p>
-                <p>Automation </p>
-                <p>Farm Management </p>
-                <p>Weather and Crop Management </p>
+                <div className="image-container">
+                  <p> <img src={FI} alt="saveTree"></img>  </p> 
+                  <h3>Connecting Farm Inputs </h3>
+                </div>
+                <div className="description-container">
+                  <p>Urban compost to Rural </p>
+                  <p>Seed Producers</p>
+                  <p>Equipment Rentals and Manufacturers</p>
+                  <p>Agri Input Companies</p>
+                  <p>Government Subsidies</p>
+                  <p>Financial Lending Institutions</p>
+                  <p>Crop Insurance</p>
+                  <p>Training</p>
+                </div>
               </li>
               <li>
-                <p> <img src={IIF} alt="saveTree"></img> <h4>Encourage Innovation</h4></p>
-                <p>Support and Encourage Farmers with their inventions in farming </p>
-                <p>Helping them to take their ideas from ideation to implementation</p>
+                <div className="image-container">
+                  <p> <img src={TI} alt="saveTree"></img> </p>
+                  <h3>Technological Intervention</h3>
+                </div>
+                <div className="description-container">
+                  <p>Automation </p>
+                  <p>Farm Management </p>
+                  <p>Weather and Crop Management </p>
+                </div>
               </li>
               <li>
-                <p> <img src={IIF} alt="saveTree"></img> <h4>Incubate Farmpreneurs</h4></p>
-                <p >Encouraging farmpreneurs (Farmer-Entrepreneurs) to create startups and generate employment opportunities in the field of farming.</p>
+                <div className="image-container">
+                  <p> <img src={GI} alt="saveTree"></img> </p>
+                  <h3>Encourage Innovation</h3>
+                </div>  
+                <div className="description-container">
+                  <p>Support and Encourage Farmers with their inventions in farming </p>
+                  <p>Helping them to take their ideas from ideation to implementation</p>
+                </div>
+              </li>
+              <li>
+               <div className="image-container"> 
+                <p> <img src={IIF} alt="saveTree"></img> </p>
+                <h3>Incubate Farmpreneurs</h3>
+               </div> 
+                <div className="description-container">
+                  <p >Encouraging farmpreneurs (Farmer-Entrepreneurs) to create startups and generate employment opportunities in the field of farming.</p>
+                </div>
               </li>
             </ul>
 

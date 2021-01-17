@@ -18,14 +18,14 @@ export default class AboutUs extends Component {
           </section>
           <section className="container abt-1">
             <div className="flex-container row">
-              <div style={{ width: '55%', padding: '0px 20px', lineHeight: '22px', color: '#555555' }}>
+              <div style={{ width: '55%', padding: '0px 20px 20px', lineHeight: '24px', color: '#555555' }}>
                 <h3>Who are we</h3>
                 <p> We are passionate young at heart entrepreneurs, Engineers, Farmers and Volunteers from various backgrounds who have taken up this cause after seeing the struggle of farmers, and want to make a difference in their lives. We seek to sustain farmers, resources and communities by promoting farming practices and methods that are profitable, environmentally sound and good for communities.</p>
                 <p>The extensive use of pesticides and fertilizers made us think about slowly transitioning farmers to sustainable growing methods.</p>
                 <p>The lack of Organic Farming knowledge, and assistance are all missing for many farmers and we at Samashti wants to address this problem and would want to collectively work with several players in the market to facilitate bringing the required help for easy transition to sustainable organic farming practises.</p>
                 <p>We want to be the change makers and our vision is to transform as many farmers as we can into a sustainable organic farmers in the near future.</p>
               </div>
-              <div style={{ width: '45%', padding: '0px 20px' }}>
+              <div style={{ width: '45%', padding: '0px 20px 20px', height: '355px', marginTop:'60px' }}>
                 <img src={aboutus2} alt="samashti-aboutus" />
               </div>
             </div>

@@ -26,12 +26,12 @@ export default class Home extends Component{
           </div>  
         </section>
         <section className="container-12">
-          <h3>We received 1.5 tons of compost from Sobha Carnation Belandur</h3>
+         {/*  <h3>We received 1.5 tons of compost from Sobha Carnation Belandur</h3> */}
         </section>
         <section className="container-8 container-13">
           <div className="c-13-c1">
             {/* <h2>SAMASHTI FOUNDATION</h2> */}
-            <p>Samashti Foundation is a not-for profit organization started to address the issues that are stoping the farmers from transitioning to organic farming.</p>
+            <p><strong>Samashti Foundation </strong>is a not-for profit organization started to address the issues that are stoping the farmers from transitioning to organic farming.</p>
              <p> We seek to sustain farmers, resources and communities by promoting farming practices and methods that are profitable, environmentally sound and good for communities. </p>
             <a href="/aboutus" className="a-button">KNOW MORE</a>
           </div>
@@ -76,20 +76,6 @@ export default class Home extends Component{
               </div>
             </div>
             
-          </div>
-        </section>
-        <section className="container-15">
-          <h2>Choose Samashti Fountation</h2>
-          <div className="continer choose-cont">
-            <div>
-              <p>Become a Volunteer</p>
-              <p>Compost Contributor</p>
-              <p>Technology partner</p>
-              <p>Fund raiser</p>
-            </div>
-            <div>
-             <p><a href="/" className="">Donate</a> </p>
-            </div>
           </div>
         </section>
       </div>

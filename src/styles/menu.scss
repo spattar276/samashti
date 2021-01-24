@@ -1,0 +1,121 @@
+header{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  .fixedheader-wrapper{
+    padding: 1rem 1rem 0 1rem;
+    .fixedheader{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+      .logo{
+          width: 15rem;
+          height: 7rem;
+        a{
+          display: inline-block;
+        }
+      }
+      .h-12{
+        display: none;
+      }    
+    }
+  }  
+  .navigation-wrapper{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(135deg, rgba(54,177,74,0.9122023809523809) 34%, rgba(74,156,176,1) 98%);
+    width: 100%;
+    .navigation {
+      width: 90%;
+      margin: 0 auto;
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      li {
+        margin: 0.875rem 0;
+        a{
+          text-decoration: none;
+          font-size: 1.125rem;
+          font-weight: 600;
+          color:#ffffff;
+          padding: 0 1.25rem;
+        }
+      }      
+    }   
+  }  
+}
+@media only screen and (max-width: 768px) {
+  header {
+    .fixedheader-wrapper {
+      padding: 0.875rem 0.875rem 0 0.875rem;
+      .fixedheader {
+        .logo{
+          width: 9rem;
+          height: 4rem;
+        }
+        .h-12{
+          display: none;
+        }
+      }
+    }
+    .navigation-wrapper{
+      .navigation {
+        li a{
+          font-size: 1rem;
+          padding: 0 1rem;
+        } 
+      }
+    } 
+  }
+}
+@media only screen and (max-width: 480px) {
+  header {
+    .fixedheader-wrapper {
+      padding: .75rem .75rem 0 .75rem;
+      cursor: pointer; // temp fix
+      .fixedheader {
+        .logo{
+          width: 8rem;
+          height: 4rem;
+        }
+        .h-11{
+          display: none;
+        }
+        .h-12{
+          display: block;
+          .hamburger{
+            width: 1.625rem;
+            height: 1.625rem;
+            display: inline-block;
+            //cursor: pointer;
+            img{
+              object-fit: cover;
+            }
+          }
+        }   
+      }
+      &:hover + .navigation-wrapper{ // todo:fix on hover of .h-12
+        display: block;
+      }
+    }
+   
+    .navigation-wrapper{  
+      display: none;  
+      .navigation {
+        display: flex;
+        flex-direction: column;
+        li {
+          margin: 0.35rem 0;
+          a{
+            font-size: 1rem;
+            padding: 0 0.875rem;
+          }
+        } 
+      }
+    }
+     
+  }
+}

@@ -1,81 +1,98 @@
-import React, {Component} from "react";
-import  OF from '../images/icons/crops.svg';
-import  FI from '../images/icons/farming.svg';
-import  TI from '../images/icons/drone-farming.svg';
-import  GI from '../images/icons/green-innovation.svg';
-import  IIF from '../images/icons/farmer.svg';
+import React, { Component } from "react";
+import OF from '../images/icons/crops.svg';
+import FI from '../images/icons/farming.svg';
+import TI from '../images/icons/drone-farming.svg';
+import GI from '../images/icons/green-innovation.svg';
+import IIF from '../images/icons/farmer.svg';
 import home1 from '../images/home-13.jpeg';
 import home2 from '../images/home-12.jpeg';
 import flat from '../images/icons/apartments1.svg';
-export default class Home extends Component{
+import USG from '../images/swachagraha.png';
+import "../styles/home.scss";
+export default class Home extends Component {
   render() {
-    return(
-      <div className="home">
-        <section className="container-11"> 
-          <div><img src={home1} alt="home1" /></div>
-          <h3>WE WORK FOR FARMERS </h3>
+    return (
+      <div className="home-wrapper">
+        <section className="hc-1">
+          <div className="carosuel"><img src={home1} alt="home1" /></div>
+          <div className="moving-text"><h1>WE WORK FOR FARMERS </h1> </div>
           <div className="right-section">
-           
-            <div className="flex-container column">
-              <p> <img src={OF} alt="saveTree"></img> <h4>Enable Sustainable Organic Farming </h4>  </p>
-              <p> <img src={FI} alt="saveTree"></img> <h4>Connecting Farm Inputs </h4> </p>
-              <p> <img src={TI} alt="saveTree"></img> <h4>Technological Intervention</h4></p>
-              <p> <img src={GI} alt="saveTree"></img> <h4>Encourage Innovation </h4></p>
-              <p> <img src={IIF} alt="saveTree"></img> <h4>Incubate Farmpreneurs</h4></p>
+            <ul>
+              <li>
+                <a href="/"><img src={OF} alt="saveTree"></img><span>Enable Sustainable Organic Farming</span></a>
+              </li>
+              <li>
+                <a href="/"> <img src={FI} alt="saveTree"></img><span>Connect Farm Inputs</span></a>
+              </li>
+              <li>
+                <a href="/"> <img src={TI} alt="saveTree"></img><span>Technological Intervention</span></a>
+              </li>
+              <li>
+                <a href="/"><img src={GI} alt="saveTree"></img><span>Encourage Innovation</span></a>
+              </li>
+              <li>
+                <a href="/"> <img src={IIF} alt="saveTree"></img><span>Incubate Farmpreneurs</span></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section className="hc-2">
+          {/* <h4>We received 1.5 tons of compost from Sobha Carnation Belandur</h4>  */}
+        </section>
+        <section className="hc-3 row">
+          <div className="hc-3__item hc-3__item__content">
+              <p><strong>Samashti Foundation </strong>is a not-for-profit organization started to address the issues that are preventing farmers from transitioning to Sustainable Organic Farming.</p>
+              <p> We seek to sustain farmers, resources and communities by promoting farming practices and methods that are profitable, environmentally sound and good for communities. </p>
+              <a href="/aboutus" className="a-button a-button__green">KNOW MORE</a>
+            </div>  
+          <div className="hc-3__item hc-3__item__figure">
+             <img src={home2} alt="aboutus" />
             </div>
-          </div>  
         </section>
-        <section className="container-12">
-         {/*  <h3>We received 1.5 tons of compost from Sobha Carnation Belandur</h3> */}
-        </section>
-        <section className="container-8 container-13">
-          <div className="c-13-c1">
-            {/* <h2>SAMASHTI FOUNDATION</h2> */}
-            <p><strong>Samashti Foundation </strong>is a not-for profit organization started to address the issues that are stoping the farmers from transitioning to organic farming.</p>
-             <p> We seek to sustain farmers, resources and communities by promoting farming practices and methods that are profitable, environmentally sound and good for communities. </p>
-            <a href="/aboutus" className="a-button">KNOW MORE</a>
-          </div>
-          <div className="c-13-c2">
-            <img src={home2} alt="aboutus" />
-          </div>
-        </section>
-        <section className=" container-14">
+        <section className="hc-4">
           <h2>Our Collaborators</h2>
-          <div className="container-8">
-          <div className="flex-2">
-              <div>
-                <h3>Grassroot Level Partner</h3>
-                <p>
-                  <div className="icon-flat-container"><img src={flat} alt='apt1' /></div>
-                  <div className="icon-flat-title"><p>BERU</p></div>
+          <div className="hc-4__container">
+            <div className="row">
+              <div className="hc-4__tile2">
+                <h3>Grassroots Level Partner</h3>
+                <p className="flaticon bl" >
+                  <img src={flat} alt='apt1' className="flaticon__container"/>
+                  <span className="flaticon__title">BERU</span>
                 </p>
               </div>
-              <div>
+             {/*  <div className="hc-4__tile2">
                 <h3>Learning Partner</h3>
-                <p>
-                  <div className="icon-flat-container"><img src={flat} alt='apt2' /></div>
-                  <div className="icon-flat-title"><p>Dayananda Sagar College of Engineering</p></div>
+                <p className="flaticon">
+                  <img src={flat} alt='apt2'  />
+                  <span >Dayananda Sagar College of Engineering</span>
                 </p>
-              </div> 
-            </div>
-           <div >
-              <h3>Urban Compost Connects</h3>
-              <div className="flex-3">
-                <p>
-                  <div className="icon-flat-container"><img src={flat} alt='apt3' /></div>
-                  <div className="icon-flat-title"><p>KVLF Apartment,</p><p>Yelchenahalli</p></div>
-                </p>
-                <p>
-                  <div className="icon-flat-container"><img src={flat} alt='apt4' /></div>
-                  <div className="icon-flat-title"><p>Innovative Flora,</p><p>Coxtown</p></div>
-                </p>
-                <p>
-                  <div className="icon-flat-container"><img src={flat} alt='apt5' /></div>
-                  <div className="icon-flat-title"><p>Sobha Tulip,</p><p>JP Nagar</p> </div>
+              </div> */}
+              <div className="hc-4__tile2">
+                <h3>Urban Compost Connects</h3>
+                <p className="flaticon">
+                  <img src={USG} alt='apt1' />
+                  <span>SwachaGraha <br/> Bengaluru</span>
+                  <span className="verticalline"></span>
                 </p>
               </div>
             </div>
-            
+            <div className="row">
+              <h3>Urban Compost Contributors</h3>
+              <div className="uc row">  
+                <p className="flaticon">
+                  <img src={flat} alt='apt4' />
+                  <span>Innovative Flora,<br/>Coxtown</span>
+                </p>
+                <p className="flaticon">
+                  <img src={flat} alt='apt5' />
+                  <span>Sobha Tulip, <br/>JP Nagar</span>
+                </p>
+                <p className="flaticon">
+                  <img src={flat} alt='apt3' />
+                  <span>KVLF Apartment,<br/>Yelchenahalli</span>
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </div>

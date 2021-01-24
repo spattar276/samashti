@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "../styles/contactus.scss"
 export default class OurWork extends Component {
   render() {
     return (

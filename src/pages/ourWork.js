@@ -3,6 +3,7 @@ import React, {Component} from "react";
 import Video1 from '../images/video-1.mp4'
 import flowchart from '../images/howwework-v3.png'
 import work1 from '../images/work-1.jpg'
+import "../styles/ourwork.scss"
 
 export default class OurWork extends Component {
   
@@ -12,15 +13,15 @@ export default class OurWork extends Component {
         <div className="our-work">
           <section className="image-banner">
             <img src={work1} alt="Heading" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-            <h2 >Our work</h2>
+            <h2 >Under Construction</h2>
           </section>
-          <section className=" wrk-1">
+         {/*  <section className=" wrk-1">
             <div className="title"><h2>How we work</h2> </div>
             <div className="wrk-11">
               <img src={flowchart} alt="how we work" />
             </div>
-          </section>
-          <section className="wrk-2">
+          </section> */}
+          {/* <section className="wrk-2">
             <div className="container">  
               <div className="title"><h2>Our Projects</h2> </div> 
               <div className="tile-col-2">     
@@ -35,13 +36,7 @@ export default class OurWork extends Component {
                 </div> 
             </div>   
             </div>
-          </section>
-        
-        
-      
-
-
-      
+          </section> */}
        </div> 
      </div>
     );

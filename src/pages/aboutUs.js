@@ -14,9 +14,9 @@ export default class AboutUs extends Component {
         <div className="about-us">
           <section className="image-banner">
             <img src={aboutus1} alt="Heading" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-            <h2 >About us</h2>
+            <h2> Under Construction</h2>
           </section>
-          <section className="container abt-1">
+          {/* <section className="container abt-1">
             <div className="flex-container row">
               <div style={{ width: '55%', padding: '0px 20px 20px', lineHeight: '24px', color: '#555555' }}>
                 <h3>Who are we</h3>
@@ -29,10 +29,10 @@ export default class AboutUs extends Component {
                 <img src={aboutus2} alt="samashti-aboutus" />
               </div>
             </div>
-          </section>
-          <section className=" abt-2">
+          </section> */}
+          {/* <section className=" abt-2">
             <div className="title-container">
-              <h2>Our Mission</h2>
+              <h1>Our Mission</h1>
               <h3>Our mission is to help farmers transition easily for which the funds will be raised and will be utilised for below activites</h3>
             </div>
             <ul className="container full-banner">
@@ -93,16 +93,16 @@ export default class AboutUs extends Component {
               </li>
             </ul>
 
-          </section>
-          <section className="our-work">
-            <div className="title-container"><h2>Our Team</h2> </div>
+          </section> */}
+          {/* <section className="our-work">
+            <div className="title-container"><h1>Our Team</h1> </div>
             <div className="flex-container row">
               <div className="projects-container" style={{ height: '352px' }}>
 
               </div>
             </div>
           </section>
-
+        */}
 
 
         </div>

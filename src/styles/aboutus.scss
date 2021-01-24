@@ -1,0 +1,96 @@
+.about-us{
+  
+  .abt-1{
+   font-size: 1rem;
+    box-shadow: 0 10px 40px rgba(102, 187, 106, .20);
+    -webkit-box-shadow: 0 10px 40px rgba(102, 187, 106, .20);
+    -moz-box-shadow: 0 10px 40px rgba(102, 187, 106, .20);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+    h3{
+      color: #164A41;
+     // font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.5;
+      margin: 10px 0px 10px 0px;
+    }
+    .flex-container{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .abt-2{
+    background: linear-gradient(135deg, rgba(54,177,74,0.9122023809523809) 34%, rgba(74,156,176,1) 98%);
+    color: #ffffff;
+    padding-bottom: 30px;
+    .title-container h1{
+      position: relative;
+      margin-bottom: 10px;
+      padding: 10px 0;
+      &::after {
+        content: '';
+        height: 2px;
+        width: 135px;
+        position: absolute;
+        bottom: 0;
+        background-color: #fff;
+        left: 45%;
+      }
+    }
+   // height: 550px;
+    ul.full-banner{
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      margin-top: 25px;
+     
+      li{
+        width: 20%;
+        padding: 10px;
+        position: relative;
+        box-shadow: 0 0 15px 2px rgba(10, 70, 13, 0.2);
+        margin-left: 20px;
+        &:first-child{
+          margin-left: 0px; 
+        }
+        .image-container{
+          height: 190px;
+          p{
+            color: #ffffff;
+            margin: 0 auto;
+            padding: 5px 10px;
+            width: 100px;
+            height: 100px;
+            display: block;
+            text-align: center;
+            img{
+              background-color: #fff;
+              border-radius: 50%;
+            } 
+          }
+          h3{
+            padding: 10px 0px;
+            text-align: center;
+            font-size: 18px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+          }
+        }
+        .description-container{
+          p{
+            margin: 0;
+            padding: 2px;
+            width: 100%;
+            height: auto;
+            font-size: 14px;
+            text-align: center;   
+          }
+        }
+      }
+    }
+  }
+}
+

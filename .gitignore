@@ -2,7 +2,8 @@
 .vscode/
 node_modules/
 node_modules/*.*
-build
+build/
+build/*.*
 .DS_Store
 *.tgz
 my-app*
